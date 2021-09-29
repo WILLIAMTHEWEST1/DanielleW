@@ -1,0 +1,35 @@
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    font-family:'Open Sans', sans-serif;
+}
+
+/* default styles */
+.header {
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-color: rgb(164, 107, 238);
+    background-image: linear-gradient(to right, #4e54c8, #8f94fb);
+} 
+/* Show big image on bigger screens */
+@media only screen and (min-width: 992px) {
+    .header {
+        background-image: url(/img/DanielleWestLarge.png);
+    }
+}
+/* smaller image for smaller screens */
+@media only screen and (min-width: 576px) and (max-width:991px){
+.header {
+    background-image: url(/img/DaniellWestSmall.png);
+}
+}
